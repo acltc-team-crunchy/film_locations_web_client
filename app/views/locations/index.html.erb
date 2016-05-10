@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Title</th>
+    <th>First Lead Actor</th>
+    <th>Second Lead Actor</th>
+  </tr>
+  <% @locations.each do |location| %>
+    <tr>
+      <td><%= location["locations"] %></td>
+      <td><%= location["title"] %></td>
+      <td><%= location["actor_1"] %></td>
+      <td><%= location["actor_2"] %></td>
+    </tr>
+  <% end %>
+</table>
